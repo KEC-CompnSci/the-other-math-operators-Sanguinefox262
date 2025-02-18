@@ -13,8 +13,8 @@ def create_player_tag(player_name, player_number):
         create_player_tag("Mario", 123) should return "Mario#123"
     """
     # Your code here
-    pass
-
+    create_player_tag = (player_name + "#" + str(player_number))
+    return create_player_tag
 def calculate_points_needed(current_score, target_score):
     """
     Calculate how many more points are needed to reach the target score.
@@ -30,8 +30,8 @@ def calculate_points_needed(current_score, target_score):
         calculate_points_needed(100, 150) should return 50
     """
     # Your code here
-    pass
-
+    calculate_points_needed = (target_score - current_score)
+    return calculate_points_needed
 def create_team_roster(team_size, player_symbol):
     """
     Create a roster string that repeats the player symbol based on team size.
@@ -47,8 +47,8 @@ def create_team_roster(team_size, player_symbol):
         create_team_roster(3, "🏃") should return "🏃🏃🏃"
     """
     # Your code here
-    pass
-
+    create_team_roster = (team_size * player_symbol)
+    return create_team_roster
 def distribute_powerups(total_powerups, players_count):
     """
     Calculate how many powerups will be left over after distributing them equally.
@@ -64,4 +64,5 @@ def distribute_powerups(total_powerups, players_count):
         distribute_powerups(10, 3) should return 1 (3 players get 3 each, 1 left over)
     """
     # Your code here
-    pass
+    distribute_powerups = (total_powerups % players_count)
+    return distribute_powerups
